@@ -13,7 +13,7 @@
       defer
       src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
     ></script>
-    <title>Services</title>
+    <title>Therapy</title>
   </head>
   <body class="bg-white" x-data>
     <div class="w-full bg-gray-100 py-1 px-2">
@@ -143,25 +143,25 @@
             </div>
 
             <div class="group relative cursor-pointer py-2">
-              <a href="services.html" class="active-menu">Services</a>
+              <a href="services.html" class="inactive-menu">Services</a>
               <div
                 class="invisible absolute z-50 flex w-auto flex-col bg-primary py-1 px-1 text-white group-hover:visible md:mt-2 md:w-48"
                 onClick=""
               >
                 <a
-                  href="#chemotherapy"
+                  href="services.html#chemotherapy"
                   class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Chemotherapy
                 </a>
                 <a
-                  href="#radiotherapy"
+                  href="services.html#radiotherapy"
                   class="service-menu-link my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                   >Radiotherapy</a
                 >
 
                 <a
-                  href="#brachytherapy"
+                  href="services.html#brachytherapy"
                   class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Brachytherapy
@@ -194,201 +194,29 @@
       </div>
     </div>
 
-    <div class="main-container">
-      <h2 class="heading my-5 text-center" id="services">Our Services</h2>
-      <div class="mt-4" x-intersect="$el.classList.add('fadeRight')" id="one">
-        <div
-          class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4"
-        >
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 items-center justify-center rounded-full border border-primary"
+    <div class="w-full bg-white" style="">
+      <div class="w-full" style="">
+        <div class="main-container bg-white py-6 md:bg-transparent">
+          <div class="mx-auto w-full py-4 md:w-1/2">
+            <h1
+              class="px-2 py-2 text-center text-4xl font-bold text-black"
+              x-intersect="$el.classList.add('fadeInUp')"
             >
-              <img src="img/imaging-icon.png" alt="" />
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Chemotherapy
-              </h3>
-              <p class="service-para flex-1 py-2 text-center text-gray-100">
-                We offer excellent chemotherapy services, including
-                pre-chemotherapy counselling, comprehensive nutritional support
-                and reconstitution of chemotherapy in a fully functional
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#chemotherapy"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 items-center justify-center rounded-full border border-primary"
-            >
-              <img src="img/user-icon.png" alt="" />
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Radiotherapy
-              </h3>
-              <p class="service-para flex-1 py-2 text-center text-gray-100">
-                ASI Ukpo Comprehensive Cancer Centre utilizes an Elekta Synergy
-                multimodal multi-energy LINAC with integrated 160-leaf
-                interdigitating multileaf collimators, with the ability
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#radiotherapy"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 flex-1 items-center justify-center rounded-full border border-primary"
-            >
-              <img src="img/medicine-icon.png" alt="" />
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Brachytherapy
-              </h3>
-              <p class="service-para py-2 text-center text-gray-100">
-                Our Flexitron HDR Brachy machine offers a safe, fast and full
-                brachytherapy solution. It is designed for precise, targeted
-                treatment of various cancers such as cervical, prostate, breast,
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#brachytherapy"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
+              Cancer Therapies
+            </h1>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="main-container mt-10 grid grid-cols-1 gap-y-4 md:grid-cols-12 md:gap-x-4"
-    >
-      <div
-        class="flex h-full flex-col justify-center justify-items-center space-y-5 bg-red-200 py-10 px-10 md:col-span-4"
-      >
-        <a
-          href="#chemotherapy"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Chemotherapy</a
-        >
-        <a
-          href="#radiotherapy"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Radiotherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy </a
-        ><a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy </a
-        ><a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy </a
-        ><a
-          href="#brachytherapy"
-          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-        <a
-          href="#brachytherapy"
-          class="disabled service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
-        >
-          Brachytherapy
-        </a>
-      </div>
-      <div class="relative col-span-8">
+    <div class="main-container mt-10">
+      <div class="flex flex-col space-y-24 py-5 md:px-20">
         <div
-          class="active-service service-section col-span-8 scroll-mt-28 md:px-4"
-          id="chemotherapy"
+          class="flex flex-col rounded-[32px] md:flex-row"
+          x-intersect="$el.classList.add('fadeInUp')"
         >
-          <div>
-            <img src="img/chemotherapy.jpg" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Chemotherapy</h2>
-            <p>
-              We offer excellent chemotherapy services, including
-              pre-chemotherapy counselling, comprehensive nutritional support
-              and reconstitution of chemotherapy in a fully functional
-              chemotherapy suite with a bio-safety cabinet. Our chemotherapy
-              drugs are sourced directly from registered, approved world-class
-              pharmaceutical companies. The presence of chemotherapy and
-              radiotherapy in one location provides the opportunity to undertake
-              adjuvant therapy and combination therapy seamlessly, providing
-              optimal treatment of the cancer, reducing the intensity of
-              sequelae / side effects, achieving a high cure rate and a better
-              quality of life thereafter.
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="radiotherapy"
-        >
-          <div>
-            <img src="img/radiotherapy.jpg" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Radiotherapy</h2>
-            <p>
+          <div class="w-full p-4 md:w-1/2">
+            <h2 class="text-2xl font-bold">RADIOTHERAPY</h2>
+            <p class="mt-4">
               ASI Ukpo Comprehensive Cancer Centre utilizes an Elekta Synergy
               multimodal multi-energy LINAC with integrated 160-leaf
               interdigitating multileaf collimators, with the ability to deliver
@@ -408,17 +236,22 @@
               the most precise diagnosis and reproducibility during treatment.
             </p>
           </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="brachytherapy"
-        >
-          <div>
-            <img src="img/brachytherapy.jpg" alt="" />
+          <div class="w-full md:w-1/2">
+            <img
+              src="img/investigations.png"
+              class="max-h-[330px] w-full rounded-2xl object-cover shadow-2xl md:ml-16 md:-mb-16"
+              alt=""
+            />
           </div>
-          <div>
-            <h2 class="heading">Brachytherapy</h2>
-            <p>
+        </div>
+
+        <div
+          class="flex flex-col rounded-[32px] md:flex-row-reverse"
+          x-intersect="$el.classList.add('fadeRight')"
+        >
+          <div class="w-full p-4 md:w-1/2">
+            <h2 class="text-2xl font-bold">BRACHYTHERAPY</h2>
+            <p class="mt-4">
               Our Flexitron HDR Brachy machine offers a safe, fast and full
               brachytherapy solution. It is designed for precise, targeted
               treatment of various cancers such as cervical, prostate, breast,
@@ -428,10 +261,46 @@
               all, a commitment to patient care.
             </p>
           </div>
+          <div class="w-full md:w-1/2">
+            <img
+              src="img/labortory.png"
+              class="-mb-16 max-h-[330px] w-full rounded-2xl object-cover shadow-2xl md:-ml-16"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col rounded-[32px] md:flex-row"
+          x-intersect="$el.classList.add('fadeInUp')"
+        >
+          <div class="w-ful mt-10 p-4 md:w-1/2">
+            <h2 class="text-2xl font-bold">CHEMOTHERAPY</h2>
+            <p class="mt-4">
+              We offer excellent chemotherapy services, including
+              pre-chemotherapy counselling, comprehensive nutritional support
+              and reconstitution of chemotherapy in a fully functional
+              chemotherapy suite with a bio-safety cabinet. Our chemotherapy
+              drugs are sourced directly from registered, approved world-class
+              pharmaceutical companies. The presence of chemotherapy and
+              radiotherapy in one location provides the opportunity to undertake
+              adjuvant therapy and combination therapy seamlessly, providing
+              optimal treatment of the cancer, reducing the intensity of
+              sequelae / side effects, achieving a high cure rate and a better
+              quality of life thereafter.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img
+              src="img/operating.png"
+              class="-mb-16 max-h-[330px] w-full rounded-2xl object-cover shadow-2xl md:ml-16"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
-    <div class="mt-[700px] bg-white md:mt-20">
+    <div class="mt-10 bg-white">
       <footer class="body-font main-container bg-white text-gray-600">
         <div
           class="container mx-auto flex flex-col flex-wrap py-12 md:flex-row md:flex-nowrap md:items-center lg:items-start"
@@ -444,7 +313,10 @@
             >
               <img src="img/asiukpo-logo.png" class="w-28" alt="" />
             </a>
-
+            <p class="mt-2 px-2 text-sm text-gray-500">
+              We will assist you in finding a qualified doctor and also we
+              provide a platform to consult with your favorite doctor.
+            </p>
             <div
               class="mt-2 flex w-full items-center justify-center space-x-4 md:justify-start"
             >
@@ -612,44 +484,6 @@
         </div>
       </footer>
     </div>
-    <script>
-      const serviceLinks = document.querySelectorAll(".service-link");
-      const serviceMenuLinks = document.querySelectorAll(".service-menu-link");
-      const serviceSections = document.querySelectorAll(".service-section");
-      for (let i = 0; i < serviceLinks.length; i++) {
-        serviceLinks[i].addEventListener("click", showService);
-      }
-      for (let i = 0; i < serviceMenuLinks.length; i++) {
-        serviceMenuLinks[i].addEventListener("click", showService);
-      }
-      function showService(e) {
-        if (e) {
-          document
-            .querySelector(".active-service")
-            .classList.add("inactive-service");
-          document
-            .querySelector(".active-service")
-            .classList.remove("active-service");
-          e.currentTarget.classList.remove("active-service");
-          e.currentTarget.classList.add("active-service");
-        }
-        for (let i = 0; i < serviceSections.length; i++) {
-          serviceSections[i].classList.add("opacity-0");
-        }
-        setTimeout(() => {
-          const link = document.URL.split("#");
-          const id = link[link.length - 1];
-          let element = document.getElementById(id);
-          if (link.length < 2) {
-            element = document.getElementById("chemotherapy");
-          }
-          element.classList.remove("opacity-0");
-        }, 100);
-      }
-      window.onload = () => {
-        setTimeout(showService, 500);
-      };
-    </script>
   </body>
   <script src="javascript/responsive.js"></script>
 </html>
